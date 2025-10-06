@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Coffe Place </title>
+    <link rel="icon" type="image/x-icon" href="Cafeteria.ico">
+    <style>
+        .contenedor {
+            position: sticky;
+            display: flex;
+            text-align: center;
+        }
+        .texto-encima{
+            position: absolute;
+            top: 50%;
+            left: 80%;
+            background-color: cc;
+            color: rgba(110, 62, 20, 0.877);
+            font-weight: bold;
+            font-style: oblique;
+            font-size: 100%;
+        }
+        .centrado {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            background-color: rgb(191, 90, 19);
+            color: rgb(243, 219, 198);
+            font-weight: bold;
+            font-style: oblique;
+            width: 100%;
+            font-size: 200%;
+        }
+        .pie {
+            background-color: saddlebrown;
+            color: white;
+            text-align: center;
+            position: sticky;
+            bottom: 0px;
+            width: 100%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .imagen1 {
+            height: 300;
+            width: 200;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+        .cabecera {
+            font-size: 300%;
+            color: rgb(0, 0, 0);
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        .pie {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-align: center;
+            position: sticky;
+            bottom: 0px;
+            width: 100%;
+            font-size: 120%;
+            font-family: "Brush Script MT";
+        }
+    </style>
+</head>
+<body style="background-color: bisque;">
+<header> 
+    <nav style="background-color: #d2b48c; padding: 15px; width: fit-content; margin-left: 20px; border: 2px solid #a0522d; border-radius: 8px; text-align: center;">
+        <a href="index.html" target="_parent">Inicio</a> |
+        <a href="mailto:alexis.solis2603@gmail.com?subject=Asunto&body=Mensaje%20de%20prueba">Contáctame</a>
+    </nav><br>
+        <audio controls style="width: 300px; height: 40px; border-radius: 8px; background-color: #f0f0f0; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <source src="jazz.mp3" type="audio/mp3">
+        </audio>
+        <div class="contenedor">
+            <img class="imagen1 " src="Cafeteria.jpg" alt="imagen">
+            <div class="centrado">¿Que va a elegir?</div>
+            <div class="texto-encima">por Alexis Solis</div>
+        </div>
+        <hr><br>
+        <h1 class="cabecera">Coffee Place</h1>
+            <p> Bienvenido a Coffee Place, un lugar donde el café se vive, se disfruta y se comparte. Nuestra pasión por esta bebida nos impulsa a 
+            seleccionar cuidadosamente granos de alta calidad, trabajar con tostadores artesanales y utilizar métodos de preparación que respetan 
+            el sabor original de cada origen. Pero no solo se trata de café: hemos creado un espacio pensado para que te sientas cómodo, inspirado y 
+            bienvenido, ya sea que vengas a leer un buen libro, ponerte al día con tus amigos, trabajar en un nuevo proyecto o simplemente tomarte un 
+            respiro del día. Nuestra carta incluye desde clásicos como espresso, cappuccino y latte, hasta opciones frías, de temporada y 
+            especiales de autor, siempre acompañadas por una selección de pastelería casera, bocados salados y alternativas veganas o sin gluten. 
+            En Coffee Place, creemos que cada detalle importa, por eso cuidamos tanto la calidad de nuestros productos como la calidez de nuestro
+            servicio. Te invitamos a descubrir tu nuevo rincón favorito, donde cada visita se convierte en una experiencia para los sentidos.</p><br>
+    </header>
+    <form action="alexis.solis2603@gmail.com" method="post" enctype="text/plain">
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <table border="2" style="width: 1000px; height: 150px;">
+            <caption style="font-weight: bold; font-size: 20px; padding: 10px;"></caption>
+            <tr height="50">
+                <td>Nombre</td>
+                <td>
+                    <input name="nombre" type="text" size="80" placeholder="Nombre..." maxlength="18">
+                </td>
+            </tr>
+            <tr height="50">
+                <td>Apellido</td>
+                <td>
+                    <input name="Apellido" type="text" size="80" placeholder="Apellido" maxlength="18">
+                </td>
+            </tr>
+            <tr height="50">
+                <td>Tipo de cafe</td>
+                <td>
+                    <select name="Tipo de cafe">
+                        <optgroup label="Cafes Negros">
+                            <option>Espresso</option>
+                            <option>Doble Espresso</option>
+                            <option>Americano</option>
+                            <option>Ristretto</option>
+                        </optgroup>
+                        <optgroup label="Con un toque de leche">
+                            <option>Macchiato</option>
+                            <option>Cortado</option>
+                        </optgroup>
+                        <optgroup label="Con leche">
+                            <option>Cappuccino</option>
+                            <option>Latte</option>
+                            <option>Mocaccino</option>
+                        </optgroup>
+                        <optgroup label="Fríos">
+                            <option>Frappe</option>
+                            <option>Frappuccino</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr height="50">
+                <td>Por favor, indique cómo desea su café<br></td>
+                <td>
+                    <textarea name="indicaciones" rows="6" cols="80" placeholder="...."></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Comentarios<br></td>
+                <td>
+                    <textarea name="comentarios" rows="10" cols="80" placeholder="Comentarios...."></textarea>
+                </td>
+            </tr>
+            <tr height="50">
+                <td>Pulse aquí</td>
+                <td align="center">
+                    <a href="about.html" style="padding:10px 20px; background-color:#8be894;
+                     color:white; text-decoration:none; border-radius:4px; font-family:Arial,sans-serif; 
+                     font-weight:bold; display:inline-block;">Enviar los datos</a>
+                    <input type="reset" value="Borrar los datos" style="margin-left:10px; padding:10px 20px; background-color:#569fed; 
+                    color:white; border:none; border-radius:4px; font-family:Arial,sans-serif; font-weight:bold; cursor:pointer;">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div style="text-align: center;">
+        <embed src="coffee place.mp4" type="video/mp4" width="800" height="450">
+    </div>
+    <br>
+    <div style="display: flex; justify-content: center;">
+        <table border="2" style="width: 1000px; text-align: center;">
+            <caption style="font-weight: bold; font-size: 20px; padding: 10px;">Lista de Cafés y Precios</caption>
+            <tr style="background-color: #f2f2f2;">
+                <th>Nombre del Café</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Espresso</td>
+                <td>$2.00</td>
+            </tr>
+            <tr>
+                <td>Doble Espresso</td>
+                <td>$3.00</td>
+            </tr>
+            <tr>
+                <td>Americano</td>
+                <td>$2.50</td>
+            </tr>
+            <tr>
+                <td>Ristretto</td>
+                <td>$2.20</td>
+            </tr>
+            <tr>
+                <td>Macchiato</td>
+                <td>$2.80</td>
+            </tr>
+            <tr>
+                <td>Cortado</td>
+                <td>$2.90</td>
+            </tr>
+            <tr>
+                <td>Cappuccino</td>
+                <td>$3.50</td>
+            </tr>
+            <tr>
+                <td>Latte</td>
+                <td>$3.80</td>
+            </tr>
+            <tr>
+                <td>Mocaccino</td>
+                <td>$4.00</td>
+            </tr>
+            <tr>
+                <td>Frappe</td>
+                <td>$4.20</td>
+            </tr>
+            <tr>
+                <td>Frappuccino</td>
+                <td>$4.50</td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <footer class="pie">
+        <p>Copyrigth (c) 2025</p>
+    </footer>
+</form>
+</body>
+</html>
